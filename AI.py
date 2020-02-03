@@ -64,6 +64,8 @@
 
 def bubble(A):
     n = len(A)
+    print("\n\n     Bubble Sort     ");
+    print("---------------------");
     print("i","j","s","Array")
     for i in range (1,n):
         for j in range (0,n-i):
@@ -74,8 +76,8 @@ def bubble(A):
                 A[j],A[j+1]=A[j+1],A[j]
 
             
-    print(A)
-
+    print("\nSorted :",A)
+    print("---------------------");
 
 a = [9,1,5,8]
 

@@ -114,13 +114,13 @@ class modelBasedVaccumAgent(Agent):
             status=percept[1]
             
             model[location]=status
-            if model[loc_A]==model[loc_B]=='Clean': return 'NoOp'
-            elif status=='Dirty': action= 'Suck'
+            if model[loc_A] == model[loc_B] == model[loc_C] == model[loc_D] == 'Clean': return 'NoOp'
+            elif 
+            elif status == 'Dirty': action= 'Suck'
             elif location == loc_A: action= random.choice(['Right','Down'])
             elif location == loc_B: action= random.choice(['Left','Down'])
             elif location == loc_C: action= random.choice(['Right','Up'])
             elif location == loc_D: action= random.choice(['Left','Up'])
-
 
             percept=(location,status)
             print('Agent perceives %s and does %s'%(percept,action))
@@ -128,6 +128,7 @@ class modelBasedVaccumAgent(Agent):
             return action                    
             
         self.program=program
+
 
         
 

@@ -115,7 +115,6 @@ class modelBasedVaccumAgent(Agent):
             
             model[location]=status
             if model[loc_A] == model[loc_B] == model[loc_C] == model[loc_D] == 'Clean': return 'NoOp'
-            elif 
             elif status == 'Dirty': action= 'Suck'
             elif location == loc_A: action= random.choice(['Right','Down'])
             elif location == loc_B: action= random.choice(['Left','Down'])
